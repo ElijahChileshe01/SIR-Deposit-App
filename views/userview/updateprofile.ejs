@@ -1,0 +1,39 @@
+<h1>Update profile</h1>
+
+<form method="POST">
+    <table class="table table-sm">
+        <tbody>
+
+            <tr>
+                <td>ID</td>
+                <td></td>
+                <td>
+                    <input type="text" name="_id" value="  <%=userss.id %> ">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Name</td>
+                <td></td>
+                <td>
+                    <input type="text" name="name" value="  <%= userss.name %> ">
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>email</td>
+                <td></td>
+                <td>
+                    <input type="text" name="email" value="  <%= userss.email %> ">
+                </td>
+
+            </tr>
+
+
+        </tbody>
+    </table>
+    <br>
+    <input type="submit" value="update changes">
+</form>

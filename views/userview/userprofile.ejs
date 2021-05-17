@@ -1,0 +1,43 @@
+<h3>User profile</h3>
+<hr>
+
+<br>
+<table class="table table-sm">
+    <tbody>
+
+        <tr>
+            <td>StudentID</td>
+            <td>:</td>
+            <td>
+
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>Name</td>
+            <td>:</td>
+            <td>
+                <%=user.name %>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td>:</td>
+            <td>
+                <%=user.email %>
+            </td>
+
+        </tr>
+
+
+    </tbody>
+</table>
+
+
+<br>
+<br>
+<p>Edit one of these? <a href="../updateprofile/<%=user.id%>">edit profile </a></p>
+<br>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata</title>
+   
+
+ 
+    <%- include ("../partials/navigation") %>
+      
+   <h2><u>New Submission: ETD-md MetaData</u></h2><hr>
+   </head>
+<body>
+
+<% if(typeof alert != 'undefined') { %>
+   <% alert.forEach(function(error) { %>
+      <div class='alert alert-warning alert-dismissible fade show' role="alert">
+         <%= error.msg %>
+         <button type='button' class='close' data-dismiss='alert' aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+         </button>
+      </div>
+  <% }) %>
+<% } %> 
+
+
+
+
+    <p>Please fill in the requested information about this submission below.</p>
+    <form class="container" action="" method="POST" enctype="multipart/form-data">
+      <div class="form-group" id="labels"></div>  
+    
+      <table class="table table-hover">
+         <tr>
+         <td>Author:</td> <td><input class = "text" name = "Authors_last_name" placeholder="Last name e.g Banda" />
+        
+         <input class = "text" name = "Authors_first_name" placeholder="First name e.g Simwanza" /><br><br></td> 
+         </tr>
+    
+         <tr>
+         <td>Computer Number:</td> <td><input class = "text" name = "Computer_Number" placeholder="E.g 2017001234" /> <br><br></td>
+         </tr>
+
+         <tr>
+         <td>Supervisors:</td> <td><input class = "text" name = "Supervisors_last_name" placeholder="Last name e.g Banda"  />
+        
+         <input class = "text" name = "Supervisors_first_name" placeholder="Last name e.g Simwanza"  /><br><br></td> 
+         </tr>
+         
+         <tr>
+         <td>Examiners:</td> <td><input class = "text" name = "Examiners_last_name" placeholder="Last name e.g Banda" />
+        
+         <input class: = "text" name = "Examiners_first_name" placeholder="Last name e.g Banda" /><br><br></td> 
+         </tr>
+         
+         <tr>
+         <td>Title:</td> <td><input type = "text" name = "Title"  /><br><br></td>
+         </tr>
+        
+         <tr>
+         <td>Subject:</td> <td><input type = "text" name = "Subject" /><br><br></td>
+         </tr>
+        
+         <tr>
+         <td>Abstract:</td> <td><textarea type="textarea" name="Abstract"  rows="5" cols="50"></textarea><br><br></td> 
+         </tr>
+
+         <tr>
+         
+         <td>Publication Date:</td> <td><input type="date" name= "Publication_Date" ><br><br></td> 
+         </tr>
+         
+         <tr>
+         <td>Level of Study:</td> <td><select name = "Level_of_Study">
+            <option value = "Doctoral" selected>Doctoral</option>
+            <option value = "Masters">Masters</option>
+         </select><br><br></td> 
+         
+         </tr>
+         <tr>
+         <td>Publication Type:</td>  <td><select name = "Type_of_Publication">
+            <option value = "Thesis" selected>Thesis</option>
+            <option value = "Dissertation">Dissertation</option>
+         </select><br><br></td> 
+         </tr>
+         <tr>
+         <td>School:</td> <td><select name = "Faculty_School">
+            <option value = "Agricultural Science" selected>Agricultural Science</option>
+            <option value = "Education">Education</option>
+            <option value = "Engineering">Engineering</option>
+            <option value = "Graduate School of Business">Graduate School of Business</option>
+            <option value = "Health Sciences">Health Science</option>
+            <option value = "Humanities and Social Sciences">Humanities and Social Scinces</option>
+            <option value = "Law">Law</option>
+            <option value = "Medicine">Medicine</option>
+            <option value = "Mines">Mines</option>
+            <option value = "Natural Sciences">Natural Science</option>
+            <option value = "Nursing Sciences">Nursing Science</option>
+            <option value = "Public Health">Public Health</option>
+            <option value = "Veterinary Medicine">Veterinary Medicine</option>
+         </select><br><br></td> 
+         </tr>
+
+         <tr>
+         <td>Department:</td> <td><select name = "Department">
+            <option value = "Computer Science" selected>Computer Science</option>
+            <option value = "Animal SCience">Animal SCience</option>
+         </select><br><br></td> 
+         </tr>
+
+         <tr>
+         <td>Additional Comment:</td> <td><textarea type="Additional comment" name="Additional_Comment"  rows="5" cols="50"></textarea><br><br></td>
+         </tr>
+       
+      </table>
+         
+         
+        <button>Lookup</button> <button>Next</button> 
+        </div>
+     </form>
+
+</body>
+</html>
+
+

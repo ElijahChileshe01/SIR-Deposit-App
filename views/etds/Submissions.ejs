@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    h1{
+        text-align: left;
+        
+    }
+    .button1{
+        border-radius: 8px;
+        background-color: darkgrey;
+        
+        
+    }
+    .button2{
+        border-radius: 8px;
+        background-color:royalblue;
+    }
+    .button3{
+        border-radius: 8px;
+        background-color: red;
+    }
+</style>
+    
+    <%- include ("../partials/navigation") %><br><br>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions</title>
+</head>
+<body>
+
+    <h2><u>Dashboard: Administrator<br> </u></h2>
+    
+    
+    
+    <table class="table table-hover">
+
+
+        
+            <tr>
+                <th>Title</th>
+                <th>School</th>
+                <th>Department</th>
+                <th>First Name </th>
+                <th>Last name</th>
+                <th>Action</th>
+            </tr>
+        <% etdList.forEach(function(Value) { %>
+        <tr>
+            <td>
+                <%= Value.Title %>
+            </td>
+            <td>
+                <%= Value.Faculty_School %>
+            </td>
+            <td>
+                <%= Value.Department %>
+            </td>
+
+            <td>
+                
+                <%= Value.Authors_first_name %>
+            </td>
+            
+            <td>
+                <%= Value.Authors_last_name %>
+            </td>
+            
+        
+    <td>
+        
+        <button class="button1" onclick="location.href='/etds/viewsubmissions/view/<%= Value._id %>'" type="button">view</button>
+        <button class="button2" onclick="location.href='/etds/viewsubmissions/edit/<%= Value._id %>'" type="button">Edit</button>
+        <button class="button3" onclick="location.href='/etds/viewsubmissions/delete/<%= Value._id %>'" type="button">Delete</button>
+
+        </td>   
+       
+    </tr>    
+                   
+                <% }) %> 
+        
+
+    </table>
+  
+
+  
+</body>
+</html>

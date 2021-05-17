@@ -1,0 +1,47 @@
+<br>
+<%- include("../partials/header.ejs"); %>
+    <h1>
+        Registration</h1>
+    <hr>
+    <br>
+
+    <%- include ('../partials/messages.ejs') %>
+
+        <form class="form-group" action="/user/register" method="POST">
+
+            <div class="form-group">
+                <label for="username">name:</label><br>
+                <input type="text" id="name" name="name" placeholder="enter your fullname" value="<%= typeof username != 'undefined' ? username : '' %>">
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email address:</label><br>
+                <input type="email" id="email" name="email" placeholder="enter your emailadress" value="<%= typeof email != 'undefined' ? email : '' %>">
+            </div>
+
+
+            <div class="form-group">
+                <label for="passsword">Password:</label><br>
+                <input type="password" id="password" name="password" value="<%= typeof password != 'undefined' ? password : '' %>">
+            </div>
+
+            <div class="form-group">
+                <label for="passsword2">confirm password:</label><br>
+                <input type="password" id="password2" name="password2" value="<%= typeof password != 'undefined' ? password : '' %>">
+            </div>
+
+            <br>
+            <input type="submit" value="register"><br>
+            <p>or register with google</p><br>
+            <input type="submit" value="Countinue with google">
+            <p>Have an account? <a href="login">login </a></p>
+        </form>
+        <br>
+        <br>
+        <a href="login">login </a>
+        <br>
+        <a href="/">Home </a>
+        <br>
+        <a href="about">About </a> <br>
+        <br>

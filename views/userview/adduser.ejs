@@ -1,0 +1,27 @@
+<br>
+<%- include("../partials/header.ejs"); %>
+
+    <h1>
+        Add-User</h1>
+    <hr>
+    <br>
+
+    <%- include ('../partials/messages.ejs') %>
+
+        <form action="/user/register" method="POST">
+            <label for="username">name:</label><br>
+            <input type="text" id="name" name="name" placeholder="enter your fullname" value="<%= typeof username != 'undefined' ? username : '' %>"><br><br>
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" name="email" placeholder="enter your emailadress" value="<%= typeof email != 'undefined' ? email : '' %>"><br><br>
+            <label for="passsword">Password:</label><br>
+            <input type="password" id="password" name="password" value="<%= typeof password != 'undefined' ? password : '' %>"><br><br>
+            <label for="passsword2">confirm password:</label><br>
+            <input type="password" id="password2" name="password2" value="<%= typeof password != 'undefined' ? password : '' %>"><br><br>
+
+
+            <br><br>
+            <input type="submit" value="Add-User"><br>
+
+        </form>
+        <br>
+        <span>  <button type="button"> <a href="./config">View Users </a> </button></span>

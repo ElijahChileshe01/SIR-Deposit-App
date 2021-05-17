@@ -1,0 +1,54 @@
+   
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    h1{
+        text-align: Left;
+    }
+</style>
+    
+    <%- include ("../partials/navigation") %>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm</title>
+</head>
+<body>
+<br><br>
+    <b><u><h2>New Submission: Verification </h2></u></b><hr>
+    
+    
+   
+   
+        
+       
+          
+                Authors first name:  <%= Value.Authors_first_name %> <br><br> 
+                Authors last name: <%= Value.Authors_last_name %> <br><br>
+                Computer Number: <%= Value.Computer_Number %> <br><br>
+                Supervisors last name: <%= Value.Supervisors_last_name %> <br><br>
+                Supervisors first name: <%= Value.Supervisors_last_name %> <br><br>
+                Examiners last name: <%= Value.Examiners_last_name %> <br><br>
+                Examiners first name: <%= Value.Examiners_last_name %> <br><br> 
+                Title:  <%= Value.Title %> <br><br>
+                Subject: <%= Value.Subject %> <br><br>
+                Abstract: <%= Value.Abstract %> <br><br>
+                Publication Date: <%= Value.Publication_Date %> <br><br>
+                Additional Comment: <%= Value.Additional_Comment %> <br><br>
+                Level of Study: <%= Value.Level_of_Study %> <br><br>
+                Type of Publication: <%= Value.Type_of_Publication %> <br><br>
+                School: <%= Value.Faculty_School %> <br><br>
+                Department: <%= Value.Department %> <br><br>
+                File: <%= Value.filename %> <br><br>
+                
+
+    </table>
+  
+
+   <button onclick="location.href='/etds/viewsubmissions'" type="button">Complete Submission</button>
+
+  
+</body>
+</html>

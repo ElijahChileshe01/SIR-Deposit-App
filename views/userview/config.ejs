@@ -1,0 +1,37 @@
+<br>
+<%- include("../partials/header.ejs"); %>
+
+    <span>  <button class="btn btn-outline-success"  type="button"> <a href="./adduser">add User </a> </button></span>
+
+
+    <table class="table table-hover">
+        <tr>
+            <th>UserName</th>
+            <th> Email</th>
+            <th>Role</th>
+            <th>Actions</th>
+        </tr>
+
+        <% users.forEach(function(item){ %>
+            <tr>
+                <td>
+                    <%= item.name %>
+                </td>
+                <td>
+                    <%= item.email %>
+                </td>
+                <td>
+                    <%= item.name%>'s role
+                </td>
+                <td>
+                    <a href="viewuser/<%=item._id %>">view</a>
+                    <a href="update/<%=item._id %>">edit</a>
+                    <a href="delete/<%=item._id %>">delete</a>
+
+                </td>
+            </tr>
+
+            <% }) %>
+    </table>
+    <br>
+    <span>  <button type="button"> <a href="./dashboard">back-to-dashboard </a> </button></span>

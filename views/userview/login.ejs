@@ -1,0 +1,29 @@
+<br>
+<%- include("../partials/header.ejs"); %>
+
+    <h1>
+        <strong>Login</strong></h1>
+    <hr>
+    <br>
+
+    <%- include ('../partials/messages.ejs') %>
+
+        <form action="/user/login" method="POST">
+            <label for="email">Email address:</label><br>
+            <input type="email" id="email" name="email" placeholder="enter your emailaddress" value=""><br><br>
+            <label for="passsword">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="enter your password" value=""><br>
+            <p><a href="forgotten password">Forgotten your passsword?</a></p>
+            <br>
+            <input type="submit" value="Sign-in"> <br><br>
+            <button type="button"> <a href="/google">login with google </a> </button>
+            <p>Don't have an account? <a href="register">register </a></p>
+        </form>
+
+        <br>
+        <br>
+        <a href="register">Register </a>
+        <br>
+        <a href="/">Home </a>
+        <br>
+        <a href="about">About </a>

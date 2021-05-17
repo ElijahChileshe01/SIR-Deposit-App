@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    h2{
+        text-align: left;
+    }
+    .buttonB{
+        border-radius: 8px;
+    }
+</style>
+
+<%- include ("../partials/navigation") %><br><br>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Users</title>
+</head>
+<body>
+    <% etdList.forEach(function(Value) { %>
+    <h2><b><%=Value.Authors_first_name%>  <%=Value.Authors_last_name%>  </b> </h2><hr>
+    
+    
+    
+    <table class="table table-hover">
+ 
+
+        
+            <tr>
+                <th>Title</th>
+                <th>School</th>
+                <th>Department</th>
+                <th>Computer Number</th>
+                <th>First Name </th>
+                <th>Last name</th>
+                <th>Action</th>
+            </tr>
+        <% etdList.forEach(function(Value) { %>
+        <tr>
+            <td>
+                <%= Value.Title %>
+            </td>
+            <td>
+                <%= Value.Faculty_School %>
+            </td>
+            <td>
+                <%= Value.Department %>
+            </td>
+            <td>
+                <%=Value.Computer_Number%>
+            </td>
+
+            <td>
+                <%= Value.Authors_first_name %>
+            </td>
+            <td>
+                
+                <%= Value.Authors_last_name %>
+            </td>
+        
+    <td>
+       
+       
+           
+        
+               <button class="buttonB" onclick="location.href='/etds/viewsubmissions'" type="button">Back</button>
+        </td>   
+       
+    </tr>    
+                   
+                <% }) %> 
+                <% }) %> 
+        
+
+    </table>
+  
+
+  
+</body>
+</html>
+
+
+

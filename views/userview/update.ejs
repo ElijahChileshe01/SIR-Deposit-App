@@ -1,0 +1,46 @@
+<br>
+<%- include("../partials/header.ejs"); %>
+    <form method="POST">
+
+
+        <table>
+            <tbody>
+
+                <tr>
+                    <td>StudentID</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" placeholder="student id goes here" name="_id" value="">
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>Name</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" placeholder="edit name" name="name" value="<%= us.name %>" required>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>email</td>
+                    <td>:</td>
+                    <td>
+                        <input type="text" placeholder="edit email" name="email" value="<%= us.email %>" required>
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+        <br>
+        <input type="submit" value="update-user"><br>
+
+    </form>
+    <br>
+    <button type="button"> <a href="./config">View Users </a>
