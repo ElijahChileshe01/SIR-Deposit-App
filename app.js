@@ -92,6 +92,6 @@ app.use("/sync", syncRouter);
 app.use("/user", userRouter);
 
 // --- Application ---
-app.listen(var_port, () => {
+ app.listen(var_port, () => {
     console.log(`smartirdeposit application running on port: ${var_port}`);
 });

@@ -7,7 +7,7 @@ const User = require('../models/User.model');
 
 
 module.exports = function(passport) {
-    passport.use(
+     passport.use(
         new LocalStrategy({ usernameField: 'email' }, (email, password, done) => {
             // match user
             User.findOne({ email: email })

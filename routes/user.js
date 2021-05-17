@@ -17,7 +17,7 @@ router.get('/config', (req, res) => {
 
 
     User.find((err, users) => {
-        if (!err) {
+         if (!err) {
             res.render('userview/config', {
                 users: users
             });

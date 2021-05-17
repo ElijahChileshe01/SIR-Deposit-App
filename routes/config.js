@@ -6,4 +6,4 @@ router.get("/", (req, res) => {
 	res.render("config/index");
 });
 
-module.exports = router;
+ module.exports = router;

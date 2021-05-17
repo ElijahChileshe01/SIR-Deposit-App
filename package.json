@@ -1,0 +1,43 @@
+{
+  "name": "smartirdeposit",
+  "version": "1.0.0",
+  "description": "A CRUD application for depositing Electronic Theses and Dissertaions produced at The University of Zambia",
+  "main": "app.js",
+  "scripts": {
+    "devSIRD": "nodemon app.js",
+    "prodSIRD": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DataLab-UNZA/smartirdeposit.git"
+  },
+  "keywords": [
+    "ExpressJS",
+    "JavaScript",
+    "Electronic",
+    "Theses",
+    "and",
+    "Dissertations"
+  ],
+  "author": "Lighton Phiri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DataLab-UNZA/smartirdeposit/issues"
+  },
+  "homepage": "https://github.com/DataLab-UNZA/smartirdeposit#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.6.0",
+    "connect-flash": "^0.1.1",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.11.18",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-google-oauth2": "^0.2.0",
+    "passport-local": "^1.0.0"
+  }
+}

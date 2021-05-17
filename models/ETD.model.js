@@ -14,7 +14,7 @@ const formSchema = new mongoose.Schema({
     Publication_Date: {type: String},
     Additional_Comment: {type: String},
     Level_of_Study: {type: String},
-    Type_of_Publication: {type: String},
+    Type_of_Publication:  {type: String},
     Faculty_School: {type:String},
     Department: {type: String},
     Document: {type: String},
